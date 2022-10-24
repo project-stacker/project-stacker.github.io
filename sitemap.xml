@@ -56,12 +56,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://stackerbuild.io/get_started/build_image/</loc>
+         <loc>https://stackerbuild.io/get_started/get_stacker/</loc>
          <lastmod>2022-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://stackerbuild.io/get_started/get_stacker/</loc>
+         <loc>https://stackerbuild.io/get_started/hello_stacker_image/</loc>
          <lastmod>2022-10-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
