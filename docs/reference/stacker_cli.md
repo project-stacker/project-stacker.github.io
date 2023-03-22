@@ -1,18 +1,18 @@
 # Stacker Command-Line Interface Reference
 
 <table>
-<tr><td><a href="stacker">stacker</a></td><td>Stacker builds OCI images</td></tr>
-<tr><td><a href="stacker-build">stacker build</a></td><td>Build a new OCI image from a stacker yaml file</td></tr>
-<tr><td><a href="stacker-recursive-build">stacker recursive-build</a></td><td>Find stacker yaml files under a directory and builds all OCI layers they define</td></tr>
-<tr><td><a href="stacker-publish">stacker publish</a></td><td>Publish OCI images previously built from one or more stacker yaml files</td></tr>
-<tr><td><a href="stacker-chroot-exec">stacker chroot</a></td><td>Run a command in a chroot (same as <code>stacker exec</code>)</td></tr>
-<tr><td><a href="stacker-clean">stacker clean</a></td><td>Clean up after a stacker build</td></tr>
-<tr><td><a href="stacker-inspect">stacker inspect</a></td><td>Print the json representation of an OCI image</td></tr>
-<tr><td><a href="stacker-grab">stacker grab</a></td><td>Grab a file from the layer's filesystem</td></tr>
-<tr><td><a href="stacker-unpriv-setup">stacker unpriv-setup</a></td><td>Do the necessary unprivileged setup for stacker build to work without root</td></tr>
-<tr><td><a href="stacker-gc">stacker gc</a></td><td>Garbage collection of unused OCI imports/outputs snapshots</td></tr>
-<tr><td><a href="stacker-check">stacker check</a></td><td>Check that all runtime required items (like kernel features) are present</td></tr>
-<tr><td><a href="stacker-help">stacker help</a></td><td>Show a list of commands or help for one command</td></tr>
+<tr><td><a href="#stacker">stacker</a></td><td>Stacker builds OCI images</td></tr>
+<tr><td><a href="#stacker-build">stacker build</a></td><td>Build a new OCI image from a stacker yaml file</td></tr>
+<tr><td><a href="#stacker-recursive-build">stacker recursive-build</a></td><td>Find stacker yaml files under a directory and builds all OCI layers they define</td></tr>
+<tr><td><a href="#stacker-publish">stacker publish</a></td><td>Publish OCI images previously built from one or more stacker yaml files</td></tr>
+<tr><td><a href="#stacker-chroot-exec">stacker chroot</a></td><td>Run a command in a chroot (same as <code>stacker exec</code>)</td></tr>
+<tr><td><a href="#stacker-clean">stacker clean</a></td><td>Clean up after a stacker build</td></tr>
+<tr><td><a href="#stacker-inspect">stacker inspect</a></td><td>Print the json representation of an OCI image</td></tr>
+<tr><td><a href="#stacker-grab">stacker grab</a></td><td>Grab a file from the layer's filesystem</td></tr>
+<tr><td><a href="#stacker-unpriv-setup">stacker unpriv-setup</a></td><td>Do the necessary unprivileged setup for stacker build to work without root</td></tr>
+<tr><td><a href="#stacker-gc">stacker gc</a></td><td>Garbage collection of unused OCI imports/outputs snapshots</td></tr>
+<tr><td><a href="#stacker-check">stacker check</a></td><td>Check that all runtime required items (like kernel features) are present</td></tr>
+<tr><td><a href="#stacker-help">stacker help</a></td><td>Show a list of commands or help for one command</td></tr>
 </table>
 
 <a name="stacker"></a>
