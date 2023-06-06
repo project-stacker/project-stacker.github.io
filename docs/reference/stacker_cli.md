@@ -50,7 +50,7 @@ This document lists the command line interface (CLI) commands for stacker versio
         --stacker-dir value   set the directory for stacker's cache (default: ".stacker")
         --oci-dir value       set the directory for OCI output (default: "oci")
         --roots-dir value     set the directory for the rootfs output (default: "roots")
-        --config value        stacker config file with defaults (default: "/home/mishield/.config/stacker/conf.yaml")
+        --config value        stacker config file with defaults (default: "/home/<username>/.config/stacker/conf.yaml")
         --debug               enable stacker debug mode
         -q, --quiet           silence all logs
         --log-file value      log to a file instead of stderr
