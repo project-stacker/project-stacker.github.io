@@ -87,11 +87,11 @@ This document lists the command line interface (CLI) commands for stacker versio
 
 ## stacker recursive-build
 
-AME:
-   stacker recursive-build - finds stacker yaml files under a directory and builds all OCI layers they define
+        NAME:
+        stacker recursive-build - finds stacker yaml files under a directory and builds all OCI layers they define
 
-USAGE:
-   stacker recursive-build [command options] [arguments...]
+        USAGE:
+        stacker recursive-build [command options] [arguments...]
 
         OPTIONS:
         --no-cache                              don't use the previous build cache
@@ -126,11 +126,11 @@ USAGE:
 
 ## stacker publish
 
-NAME:
-   stacker publish - publishes OCI images previously built from one or more stacker yaml files
+        NAME:
+        stacker publish - publishes OCI images previously built from one or more stacker yaml files
 
-USAGE:
-   stacker publish [command options] [arguments...]
+        USAGE:
+        stacker publish [command options] [arguments...]
 
         OPTIONS:
         --stacker-file value, -f value          the input stackerfile (default: "stacker.yaml")
