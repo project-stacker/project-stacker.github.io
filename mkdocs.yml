@@ -122,6 +122,7 @@ nav:
     - Image Chroot: user_guide/image_chroot.md
     - Grab Image Content: user_guide/grab_image_content.md
     - Debugging: user_guide/debugging.md
+    - Converting a Dockerfile: user_guide/convert_dockerfile.md
   - Reference:
     - Stacker CLI: reference/stacker_cli.md
     - Stacker File: reference/stacker_file.md
