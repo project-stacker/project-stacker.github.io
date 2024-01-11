@@ -4,7 +4,7 @@
 
 ### Convert a Dockerfile for stacker
 
-- A new [`stacker convert`](reference/stacker_cli.md#stacker-convert) command performs a conversion of a Dockerfile into a stacker.yaml file. During the conversion, some variables from the Dockerfile may be exported to a substitution file.  
+- A new [`stacker convert`](reference/stacker_cli.md#stacker-convert) command performs a conversion of a Dockerfile into a stacker.yaml file. During the conversion, some variables from the Dockerfile may be exported to a substitution file that can be included in `stacker build` using the `--substitute-file <filename>` command option.
 
     :pencil2: The conversion is a best-effort process and may not be successful in all cases.
 
@@ -14,9 +14,9 @@
 
 ### Specify a single working directory
 
-- A new [`stacker`](reference/stacker_cli.md#stacker) command option, `work-dir`, sets the working directory for stacker's cache, OCI output, and rootfs output. The existing command options `stacker-dir`, `oci-dir`, and `roots-dir` can then be omitted or used to override the `work-dir` setting.
+- A new [`stacker`](reference/stacker_cli.md#stacker) command option, `--work-dir`, sets the working directory for stacker's cache, OCI output, and rootfs output. The existing command options `--stacker-dir`, `--oci-dir`, and `--roots-dir` can then be omitted or used to override the `--work-dir` setting.
 
-### Import contents when no shell exists
+### Import contents when no shell exists in the base image
 
 - Import directives can include destination paths. This feature is useful when images are built from a scratch layer before any shell has been invoked. Prior to this, a `run:` section was required to invoke a shell and to explicitly copy files to be imported into the image. For example, you can now write a directive such as the following, with no `run:` section:
 
@@ -51,7 +51,7 @@
 
 ### Support for `import`ing content into container image
 
-- Prior to v0.40.1, copying content into a layer permanently involved bind mounting a shell such as busybox and invoking appropriate commands using the `run` directive. Now `import` directive [allows](reference/stacker_file.md#import-dest) for the `dest` option to achieve the same.
+- Prior to v0.40.1, copying content into an image permanently involved bind mounting a shell such as busybox and invoking appropriate commands using the `run` directive. Now `import` directive [allows](reference/stacker_file.md#import-dest) for the `dest` option to achieve the same.
 
 ### Publish with substitutions specified in a file
   

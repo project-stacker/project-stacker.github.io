@@ -203,8 +203,8 @@ changed.
 ### `config`
 
 The `config` key is a special type of entry in the root of the `stacker.yaml` file.
-It cannot contain a layer definition; it is used to provide configuration
-applicable for building all the layers defined in this file. For example,
+It cannot contain an image definition; it is used to provide configuration
+applicable for building all the images defined in this file. For example,
 
     config:
         prerequisites:
@@ -214,7 +214,7 @@ applicable for building all the layers defined in this file. For example,
 #### `prerequisites`
 
 If the `prerequisites` list is present under the `config` key, stacker will
-make sure to build all the layers in the stacker.yaml files found at the paths
+make sure to build all the images in the stacker.yaml files found at the paths
 contained in the list. In this way, stacker supports building multiple
 stacker.yaml files in the correct order.
 

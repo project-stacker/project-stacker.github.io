@@ -29,7 +29,7 @@ This document lists the command line interface (CLI) commands for stacker versio
         stacker [global options] command [command options] [arguments...]
 
         VERSION:
-        stacker v1.0.0-rc4-8e267fc liblxc 727adc05220e9b8b594c5bc2124bef5b2e0abe7a
+        stacker <version> liblxc <digest>
 
         COMMANDS:
         build            builds a new OCI image from a stacker yaml file
