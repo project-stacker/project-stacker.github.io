@@ -5,13 +5,13 @@ This document lists the command line interface (CLI) commands for stacker versio
 <table>
 <tr><td><a href="#stacker">stacker</a></td><td>Stacker builds OCI images</td></tr>
 <tr><td><a href="#stacker-build">stacker build</a></td><td>Builds a new OCI image from a stacker yaml file</td></tr>
-<tr><td><a href="#stacker-recursive-build">stacker recursive-build</a></td><td>Finds stacker yaml files under a directory and builds all OCI layers they define</td></tr>
+<tr><td><a href="#stacker-recursive-build">stacker recursive-build</a></td><td>Finds stacker yaml files under a directory and builds all OCI images they define</td></tr>
 <tr><td><a href="#stacker-convert">stacker convert</a></td><td>Converts a Dockerfile into a stacker yaml file</td></tr>
 <tr><td><a href="#stacker-publish">stacker publish</a></td><td>Publishes OCI images previously built from one or more stacker yaml files</td></tr>
 <tr><td><a href="#stacker-chroot-exec">stacker chroot</a></td><td>Runs a command in a chroot (same as <code>stacker exec</code>)</td></tr>
 <tr><td><a href="#stacker-clean">stacker clean</a></td><td>Cleans up after a stacker build</td></tr>
 <tr><td><a href="#stacker-inspect">stacker inspect</a></td><td>Prints the json representation of an OCI image</td></tr>
-<tr><td><a href="#stacker-grab">stacker grab</a></td><td>Grabs a file from the layer's filesystem</td></tr>
+<tr><td><a href="#stacker-grab">stacker grab</a></td><td>Grabs a file from the image's filesystem</td></tr>
 <tr><td><a href="#stacker-unpriv-setup">stacker unpriv-setup</a></td><td>Does the necessary unprivileged setup for stacker build to work without root</td></tr>
 <tr><td><a href="#stacker-gc">stacker gc</a></td><td>Garbage collection of unused OCI imports/outputs snapshots</td></tr>
 <tr><td><a href="#stacker-check">stacker check</a></td><td>Checks that all runtime required items (like kernel features) are present</td></tr>
@@ -146,7 +146,7 @@ This document lists the command line interface (CLI) commands for stacker versio
         --show-only                             show the images to be published without actually publishing them
         --force                                 force publishing the images present in the OCI layout even if they should be rebuilt
         --layer-type value                      set the output layer type (supported values: tar, squashfs); can be supplied multiple times (default: "tar")
-        --layer value                           layer to be published; can be specified multiple times
+        --image value                           image to be published; can be specified multiple times
 
 <a name="stacker-chroot-exec"></a>
 

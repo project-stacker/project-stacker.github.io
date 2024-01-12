@@ -77,7 +77,7 @@ Will import foo.tar.gz and make it available in `/stacker`. Note that stacker wi
 
     stacker://$name/path/to/file
 
-Will grab /path/to/file from the previously built layer `$name`.
+Will grab /path/to/file from the previously built image `$name`.
 
 #### `import hash`
 

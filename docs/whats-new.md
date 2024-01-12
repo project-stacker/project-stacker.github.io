@@ -8,9 +8,9 @@
 
     :pencil2: The conversion is a best-effort process and may not be successful in all cases.
 
-### Publish specific layers
+### Publish specific images
 
-- By default, the [`stacker publish`](reference/stacker_cli.md#stacker-publish) command pushes all layers in a stacker.yaml file instead of only the required layers. Using a new command option, `layer <value>`, you can explicitly specify which layers are to be published.  This command option can be specified multiple times, selecting each layer to be included.
+- By default, the [`stacker publish`](reference/stacker_cli.md#stacker-publish) command pushes all images in a stacker.yaml file instead of only the required images. Using a new command option, `--image <value>`, you can explicitly specify which images are to be published.  This command option can be specified multiple times, selecting each image to be included.
 
 ### Specify a single working directory
 
@@ -18,7 +18,7 @@
 
 ### Import contents when no shell exists in the base image
 
-- Import directives can include destination paths. This feature is useful when images are built from a scratch layer before any shell has been invoked. Prior to this, a `run:` section was required to invoke a shell and to explicitly copy files to be imported into the image. For example, you can now write a directive such as the following, with no `run:` section:
+- Import directives can include destination paths. This feature is useful to simplify `run` section scripts, and for when images are built without a base image. With no base image, there is no shell to run the script in a `run` section. Prior to this change, a `run:` section was required to invoke a shell and to explicitly copy files to be imported into the image. For example, you can now write a directive such as the following, with no `run:` section:
 
         test:
           from:
@@ -47,11 +47,11 @@
 
 ### Support for `scratch`
 
-- Prior to v0.40.1, `stacker` did not support empty root filesystems to be used a base container image. The support has now been [added](reference/stacker_file.md#from) which can be used to host statically built binaries.
+- Prior to v0.40.1, `stacker` did not support empty root filesystems to be used as a base container image. The support has now been [added](reference/stacker_file.md#from) which can be used to host statically built binaries.
 
 ### Support for `import`ing content into container image
 
-- Prior to v0.40.1, copying content into an image permanently involved bind mounting a shell such as busybox and invoking appropriate commands using the `run` directive. Now `import` directive [allows](reference/stacker_file.md#import-dest) for the `dest` option to achieve the same.
+- Prior to v0.40.1, copying content into a scratch image permanently involved bind mounting a shell such as busybox and invoking appropriate commands using the `run` directive. Now the `import` directive [allows](reference/stacker_file.md#import-dest) for the `dest` option to achieve the same.
 
 ### Publish with substitutions specified in a file
   
