@@ -10,7 +10,7 @@
 
 ### Publish specific images
 
-- By default, the [`stacker publish`](reference/stacker_cli.md#stacker-publish) command pushes all images in a stacker.yaml file instead of only the required images. Using a new command option, `--image <value>`, you can explicitly specify which images are to be published.  This command option can be specified multiple times, selecting each image to be included.
+- By default, the [`stacker publish`](reference/stacker_cli.md#stacker-publish) command pushes all images in a stacker.yaml file. Using a new command option, `--image <value>`, you can explicitly specify which images are to be published.  This command option can be specified multiple times, selecting each image to be included. In either case, images configured with `build-only: true` are not published.
 
 ### Specify a single working directory
 
