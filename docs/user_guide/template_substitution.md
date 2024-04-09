@@ -1,27 +1,46 @@
 # Template Variable Substitution
 
-When doing a `stacker build`, the behavior of stacker is specified by the YAML
-directives below. In addition to these, stacker allows variable substitions of
-several forms. For example, a line like:
+In the yaml directives that direct a stacker build, stacker allows variable substitions of several forms. For example, these three substition statements:
 
     $ONE ${{TWO}} ${{THREE:3}}
 
-When run with `stacker build --substitute ONE=1 --substitute TWO=2` is
-processed in stacker as:
+when run with `stacker build --substitute ONE=1 --substitute TWO=2` are
+processed by stacker as:
 
     1 2 3
 
-That is, variables of the form `$FOO` or `${FOO}` are supported, and variables
-with `${FOO:default}` a default value will evaluate to their default if not
-specified on the command line. It is an error to specify a `${FOO}` style
-without a default; to make the default an empty string, use `${FOO:}`.
+In order to avoid conflict with bash or POSIX shells in the `run` section, only placeholders with two braces are supported, such as `${{FOO}}`. Placeholders with a default value like `${{FOO:default}}` will evaluate to their default if not specified on the command line or in a substitution file.
 
-You can also declare variable substitutions in a separate file which is then included in the build command as in this example:
+Using a `${{FOO}}` placeholder without a default will result in an error if there is no substitution provided. If you want an empty string in that case, use an empty default: `${{FOO:}}`.
+
+In order to avoid confusion, it is also an error if a placeholder in the shell style (`$FOO` or `${FOO}`) is found when the same key has been provided as a substitution either via the command line (for example, `--substitute FOO=bar`) or in a substitution file. An error will be reported with an explanation for how to rewrite it, as in this example:
+
+    error "A=B" was provided as a substitution and unsupported placeholder "${A}" was found. Replace "${A}" with "${{A}}" to use the substitution.
+
+Substitutions can also be specified in a separate yaml file using the argument `--substitute-file` in the build command, as in this example:
 
 `stacker build --substitute-file <filename>`
 
-The substitution file simply contains KEY:VALUE pairs, as in this example:
+The substitution file simply contains any number of KEY:VALUE pairs, as in this example:
 
     $ cat stacker-subs.yaml
+
     ONE: 1
     TWO: 2
+    FOO: bar
+    BAZ: bat
+
+In addition to substitutions provided on the command line or in a file, the following variables are also available with their values from either command line flags or stacker-config file.
+
+    STACKER_STACKER_DIR config name 'stacker_dir', cli flag '--stacker-dir'-
+    STACKER_ROOTFS_DIR  config name 'rootfs_dir', cli flag '--roots-dir'
+    STACKER_OCI_DIR     config name 'oci_dir', cli flag '--oci-dir'
+
+The stacker build environment has the following environment variables available for reference:
+
+  * `STACKER_LAYER_NAME`: the name of the layer being built.  `STACKER_LAYER_NAME` will be `my-build` when the `run` section below is executed.
+
+      ```yaml
+      my-build:
+        run: echo "Your layer is ${STACKER_LAYER_NAME}"
+      ```
