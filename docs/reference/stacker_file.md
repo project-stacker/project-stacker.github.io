@@ -1,13 +1,15 @@
 # The `stacker.yaml` file
 
-When doing a `stacker build`, the behavior of stacker is specified by the yaml
-directives below. In addition to these, stacker allows variable substitions of
-several forms. For example, a line like:
+During a stacker build, the behavior of stacker is specified by yaml directives in a `stacker.yaml` file, as described in this document.
+
+## Substitutions and variables
+
+In the yaml directives, stacker allows variable substitions of several forms. For example, these three substition statements:
 
     $ONE ${{TWO}} ${{THREE:3}}
 
-When run with `stacker build --substitute ONE=1 --substitute TWO=2` is
-processed in stacker as:
+when run with `stacker build --substitute ONE=1 --substitute TWO=2` are
+processed by stacker as:
 
     1 2 3
 
@@ -21,17 +23,18 @@ In order to avoid confusion, it is also an error if a placeholder in the shell s
 
 Substitutions can also be specified in a yaml file given with the argument `--substitute-file`, with any number of key: value pairs:
 
+    ONE: 1
+    TWO: 2
     FOO: bar
     BAZ: bat
 
-In addition to substitutions provided on the command line or a file, the following variables are also available with their values from either command line flags or stacker-config file.
+In addition to substitutions provided on the command line or in a file, the following variables are also available with their values from either command line flags or stacker-config file.
 
     STACKER_STACKER_DIR config name 'stacker_dir', cli flag '--stacker-dir'-
     STACKER_ROOTFS_DIR  config name 'rootfs_dir', cli flag '--roots-dir'
     STACKER_OCI_DIR     config name 'oci_dir', cli flag '--oci-dir'
 
-The stacker build environment has the following environment variables
-available for reference:
+The stacker build environment has the following environment variables available for reference:
 
   * `STACKER_LAYER_NAME`: the name of the layer being built.  `STACKER_LAYER_NAME` will be `my-build` when the `run` section below is executed.
 
@@ -39,6 +42,8 @@ available for reference:
       my-build:
         run: echo "Your layer is ${STACKER_LAYER_NAME}"
       ```
+
+## YAML directives
 
 ### `from`
 
