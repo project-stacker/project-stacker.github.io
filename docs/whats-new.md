@@ -31,7 +31,7 @@
 
 ### Generate SBOMs during the build
 
-- Changes added in [OCI Distribution Spec v1.1.0-rc3](https://github.com/opencontainers/distribution-spec/releases/tag/v1.1.0-rc3) and [OCI Image Spec v1.1.0-rc4](https://github.com/opencontainers/image-spec/releases/tag/v1.1.0-rc4) (summarized [here](https://opencontainers.org/posts/blog/2023-07-07-summary-of-upcoming-changes-in-oci-image-and-distribution-specs-v-1-1/)) allow arbitrary artifact types and references. These changes support software supply chain use cases such as SBOMs.
+- Changes added in [OCI Distribution Spec v1.1.0](https://github.com/opencontainers/distribution-spec/releases/tag/v1.1.0) and [OCI Image Spec v1.1.0](https://github.com/opencontainers/image-spec/releases/tag/v1.1.0) (summarized [here](https://opencontainers.org/posts/blog/2023-07-07-summary-of-upcoming-changes-in-oci-image-and-distribution-specs-v-1-1/)) allow arbitrary artifact types and references. These changes support software supply chain use cases such as SBOMs.
 
 - For a demonstration of an OCI artifacts workflow that generates an SBOM, see [Software Provenance Workflow Using OCI Artifacts](user_guide/generate_sbom.md).
 
