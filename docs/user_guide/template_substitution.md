@@ -1,13 +1,16 @@
 # Template Variable Substitution
 
-In the yaml directives that direct a stacker build, stacker allows variable substitions of several forms. For example, these three substition statements:
+Before parsing the yaml directives that direct a stacker build, stacker performs substitions on any variable placeholders of the format `${{VAR}}` or `${{VAR:default}}` in the directives. For example, when a stacker build is run with this command:
 
-    $ONE ${{TWO}} ${{THREE:3}}
+`stacker build --substitute ONE=1`
 
-when run with `stacker build --substitute ONE=1 --substitute TWO=2` are
-processed by stacker as:
+these variable placeholders:
 
-    1 2 3
+    ${{ONE}} ${{TWO:3}}
+
+are replaced by stacker with these values:
+
+    1 3
 
 In order to avoid conflict with bash or POSIX shells in the `run` section, only placeholders with two braces are supported, such as `${{FOO}}`. Placeholders with a default value like `${{FOO:default}}` will evaluate to their default if not specified on the command line or in a substitution file.
 
