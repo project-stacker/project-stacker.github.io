@@ -141,11 +141,14 @@ overlay_dirs:
 This example will result in all the files/dirs from the host's /path/to/directory to be available under container's /usr/local/ and all the files/dirs from the host's /path/to/directory2 to be available under container's /
 
 
-### `environment`, `labels`, `working_dir`, `volumes`, `cmd`, `entrypoint`, `user`
+### `environment`, `labels`, `working_dir`, `volumes`, `cmd`, `entrypoint`
 
-These correspond exactly to the similarly named bits in the [OCI image
-config spec](https://github.com/opencontainers/image-spec/blob/master/config.md#properties),
+These entries correspond exactly to the similarly named bits in the [OCI image config spec](https://github.com/opencontainers/image-spec/blob/master/config.md#properties),
 and are available for users to pass variables through to the runtime environment of the image.
+
+### `runtime_user`
+
+The `runtime_user` entry sets the `user` field in the container configuration, as defined in the [OCI Image config spec](https://github.com/opencontainers/image-spec/blob/master/config.md#properties). 
 
 ### `generate_labels`
 
@@ -211,7 +214,7 @@ When `stacker build -f parent/folder1/stacker.yaml` is invoked, stacker searches
       a.b.c.key: abc_val
       p.q.r.key: pqr_val
 
-While the `config` section supports a similar `labels`, it is more pertinent to the image runtime. On the other hand, `annotations` is intended to be image-specific metadata aligned with the [annotations in the image spec](https://github.com/opencontainers/image-spec/blob/main/annotations.md).
+While the `config` section supports a similar `labels`, it is more pertinent to the image runtime. On the other hand, `annotations` is intended to be image-specific metadata aligned with the [annotations in the OCI Image spec](https://github.com/opencontainers/image-spec/blob/main/annotations.md).
 
 ### os
 
