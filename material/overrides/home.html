@@ -2,6 +2,7 @@
 {% block tabs %}
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <!-- Hero section -->
   <section class="tx-container">
     <div class="md-grid md-typeset">
       <div class="tx-hero">
@@ -41,6 +42,7 @@
       </div>
     </div> 
   </section>
+  <!-- Cards section -->
   <section class="tx-container default-bg">
     <div class="md-grid md-typeset">
       <div class="content-container-centered ">
@@ -51,16 +53,16 @@
               <div class="content_icon">
                   {% include ".icons/fontawesome/solid/download.svg" %} 
               </div>
-              <div class="item_content">
+              <div>
                 <h2 class="card_title">Single Binary</h2>
                 <p>One statically built binary for simplified download and install with no additional dependencies or services.</p>
-             </div>
+            </div>
             </li>
             <li class="centered-content-grid__item md-typeset">
               <div class="content_icon">
                 {% include ".icons/fontawesome/solid/repeat.svg" %} 
-             </div>
-              <div class="item_content">
+            </div>
+              <div>
                 <h2 class="card_title">Repeatable</h2>
                 <p>Hermetically sealed environment for image builds using LXC containers so that builds are repeatable without side-effects.</p>
               </div>
@@ -68,8 +70,8 @@
             <li class="centered-content-grid__item md-typeset">
               <div class="content_icon">
                 {% include ".icons/fontawesome/solid/lock.svg" %} 
-             </div>
-              <div class="item_content">
+            </div>
+              <div>
                 <h2 class="card_title">Unprivileged</h2>
                 <p>Build using user namespaces and avoid privileges on host.</p>
               </div>
@@ -78,7 +80,7 @@
               <div class="content_icon">
                 {% include ".icons/fontawesome/solid/forward.svg" %} 
               </div>
-              <div class="item_content">
+              <div>
                 <h2 class="card_title">Incremental</h2>
                 <p>Build only the images necessary and rebuild only if any input changed.</p>
               </div>
@@ -86,8 +88,8 @@
             <li class="centered-content-grid__item md-typeset">
               <div class="content_icon">
                 {% include ".icons/fontawesome/brands/github.svg" %} 
-             </div>
-              <div class="item_content">
+            </div>
+              <div>
                 <h2 class="card_title">GitHub Action</h2>
                 <p>Integrated with GitHub as a build-and-push <a href="https://github.com/marketplace/actions/stacker-build-and-push-action">action</a>.</p>
               </div>
@@ -96,7 +98,7 @@
               <div class="content_icon">
                 {% include ".icons/fontawesome/brands/github-alt.svg" %} 
               </div>
-              <div class="item_content">
+              <div>
                 <h2 class="card_title">Open source</h2>
                 <p>Released as an open source project under Apache2 License.</p>
               </div>
@@ -105,6 +107,89 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- feature section -->
+  <section class="tx-container default-bg">
+    <div class="md-grid md-typeset">
+      <div class="content-container-centered">
+        <h1>More than just building container images</h1>
+        <div class="feature-container">
+            <!-- Each figure represents a text content + image-link combo -->
+            <!-- Each figure can be a different image and link to documentation article -->
+            <!-- Add more figures as desired -->
+            <figure class="feature-content">
+              <a href="get_started/get_stacker/">
+                <img src="assets/images/illustrations/home.png" alt="figure" width="500" height="3290" draggable="false">
+              </a>
+              <figcaption>
+                <h2>Figure Title</h2>
+                <!-- Add or remove paragraphs as desired -->
+                <p>
+                  Material for MkDocs makes your documentation instantly searchable with zero effort: 
+                  say goodbye to costly third-party crawler-based solutions that can take hours to update. 
+                  Ship your documentation with a highly customizable and blazing fast search running entirely in the user's browser at no extra cost.
+                </p>
+                <p>
+                  Even better: search inside code blocks, exclude specific sections or entire pages, 
+                  boost important pages in the results and build searchable documentation that works offline.
+                </p>
+                <p><a href="get_started/get_stacker/">Link to something else</a></p>
+              </figcaption>
+            </figure>
+            <figure class="feature-content">
+              <a href="get_started/get_stacker/">
+                <img src="assets/images/illustrations/home.png" alt="figure" width="500" height="3290" draggable="false">
+              </a>
+              <figcaption>
+                <h2>Figure Title</h2>
+                <!-- Add or remove paragraphs as desired -->
+                <p>
+                  Material for MkDocs makes your documentation instantly searchable with zero effort: 
+                  say goodbye to costly third-party crawler-based solutions that can take hours to update. 
+                  Ship your documentation with a highly customizable and blazing fast search running entirely in the user's browser at no extra cost.
+                </p>
+                <p>
+                  Even better: search inside code blocks, exclude specific sections or entire pages, 
+                  boost important pages in the results and build searchable documentation that works offline.
+                </p>
+                <p><a href="get_started/get_stacker/">Link to something else</a></p>
+              </figcaption>
+            </figure>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- keep in touch section -->
+  <section class="tx-container default-bg">
+    <div class="md-grid md-typeset">
+      <div class="content-container-centered">
+        <div class="centered-content-column-wrapper">
+          <div class="content-container-column">
+            <h1>Keep in touch left side title</h1>
+            <div class="column-content">
+              <!-- Paragraphs can be added as desired -->
+              <p>
+                By joining the Insiders program, you'll get immediate access to the latest features while also helping support the ongoing development of Material for MkDocs. 
+                hanks to our awesome sponsors, this project is actively maintained and kept in good shape.
+              </p>
+              <p>
+                Together, we can build documentation that simply works!
+              </p>
+              <p><a class="md-button md-button--custom">Link to something else</a></p>
+            </div>
+          </div>
+          <div class="content-container-column">
+            <h1>Right side title</h1>
+            <div class="column-content">
+              <!-- Paragraphs can be added as desired -->
+              <p>First paragraph</p>
+              <p>Second paragraph</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
   </section>
 {% endblock %}
 {% block content %}{% endblock %}
