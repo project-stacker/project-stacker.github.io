@@ -2,167 +2,167 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://stackerbuild.io/v1.0.0/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/features/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/license/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/stacker/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/whats-new/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/concepts/about/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/concepts/oci_image_layout/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/concepts/stacker_architecture/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/developer_guide/CONTRIBUTING/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/developer_guide/building_stacker/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/developer_guide/code_structure/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/developer_guide/lxc_usage/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/developer_guide/overlayfs_usage/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/get_started/get_stacker/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/get_started/hello_stacker_image/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/get_started/tutorial/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/reference/stacker_cli/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/reference/stacker_file/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/annotation_support/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/build_cache/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/build_code/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/build_container_image/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/build_environment/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/convert_dockerfile/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/debugging/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/dependency_builds/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/generate_sbom/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/grab_image_content/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/image_chroot/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/inspect_images/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/publish_images/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/scratch_image/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stackerbuild.io/v1.0.0/user_guide/template_substitution/</loc>
-         <lastmod>2024-04-12</lastmod>
+         <lastmod>2025-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
