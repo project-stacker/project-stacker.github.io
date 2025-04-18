@@ -63,7 +63,7 @@ The rebuild is shorter because stacker caches all of the inputs to a build, and 
 
 > :bulb: Stacker's metadata can be cleaned with `stacker clean`, which also removes its entire cache.
 
-## Adding `import` and `run` directives
+## Adding `imports` and `run` directives
 
 At this point in our example, the only input is a base image, but what if we want to import a script to run or a config file? Consider the next stacker file example:
 
@@ -72,7 +72,7 @@ At this point in our example, the only input is a base image, but what if we wan
         from:
             type: docker
             url: docker://centos:latest
-        import:
+        imports:
             - config.json
             - install.sh
         run: |
@@ -106,10 +106,10 @@ If the content of `install.sh` is "echo hello world," the stacker build output w
 	filesystem first built successfully
 </pre>
 
-In this latest stacker file, we've added an `import` section, with two new directives :
+In this latest stacker file, we've added an `imports` section, with two new directives :
 
 ```yaml
-    import:
+    imports:
         - config.json
         - install.sh
 ```
@@ -159,7 +159,7 @@ Finally, stacker offers "build only" containers, which are built but not emitted
         from:
             type: docker
             url: docker://centos:latest
-        import: stacker://build/umoci.static
+        imports: stacker://build/umoci.static
         run: cp /stacker/umoci.static /usr/bin/umoci
 ```
 
@@ -172,7 +172,7 @@ This file builds a static version of umoci in an ubuntu container, but the final
 This line indicates that the container shouldn't be emitted in the final image, because we're only going to import something from it and we don't need the rest of it.
 
 ```yaml
-    import: stacker://build/umoci.static
+    imports: stacker://build/umoci.static
 ```
 
 This line performs the actual import. The line calls for this action: "From a previously built stacker image called `build`, import `/umoci.static`."
