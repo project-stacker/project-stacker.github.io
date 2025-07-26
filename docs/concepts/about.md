@@ -32,6 +32,4 @@ The stacker project is hosted on GitHub:
   
 ## License
 
-stacker is released under the Apache License, Version 2.0, and is:
-
-Copyright (C) 2017-2023 Cisco Systems, Inc. and contributors
+stacker is released under the Apache License, Version 2.0
