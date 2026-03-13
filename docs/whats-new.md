@@ -1,5 +1,54 @@
 # What's New
 
+## [v1.1.7](https://github.com/project-stacker/stacker/releases/tag/v1.1.7)
+
+- Added initial support for reproducible builds by respecting `SOURCE_DATE_EPOCH` ([commit](https://github.com/project-stacker/stacker/commit/40dfefe)).
+- Removed `stacker-bom` and related SBOM referrer upload code to address CVE/security concerns. now using `bom:` in a stacker file will fail. ([commit](https://github.com/project-stacker/stacker/commit/e50afd5), [commit](https://github.com/project-stacker/stacker/commit/0765485)).
+
+
+## [v1.1.6](https://github.com/project-stacker/stacker/releases/tag/v1.1.6)
+
+- Official builds are back.
+- No user-visible changes, just CI improvements.
+
+
+## [v1.1.5](https://github.com/project-stacker/stacker/releases/tag/v1.1.5)
+
+Unfortunately no official build is available due to issues with github actions for this tag.
+
+- No user-visible changes, just CI improvements.
+
+
+## [v1.1.4](https://github.com/project-stacker/stacker/releases/tag/v1.1.4)
+
+Unfortunately no official build is available due to issues with github actions for this tag.
+
+- Added support for Debian 13 “Trixie” ([commit](https://github.com/project-stacker/stacker/commit/ad24357)).
+- Fixed a rare issue with lxc socket name collisions in concurrent builds on the same machine in separate mount namespaces ([#746](https://github.com/project-stacker/stacker/pull/746)).
+
+
+## [v1.1.3](https://github.com/project-stacker/stacker/releases/tag/v1.1.3)
+
+- Improvements to official release build of arm64 arch
+
+
+## [v1.1.2](https://github.com/project-stacker/stacker/releases/tag/v1.1.2)
+
+- Stopped logging discovered credentials, reducing the risk of accidental secret exposure in debug or build output ([#728](https://github.com/project-stacker/stacker/pull/728)).
+
+
+## [v1.1.1](https://github.com/project-stacker/stacker/releases/tag/v1.1.1)
+
+- Improved authenticated import behavior by updating credential lookup to use the full host and path, which allows different credentials to be used for different repository paths on the same server ([#726](https://github.com/project-stacker/stacker/pull/726)).
+
+
+## [v1.1.0](https://github.com/project-stacker/stacker/releases/tag/v1.1.0)
+
+- Added support for `erofs` layers ([#626](https://github.com/project-stacker/stacker/pull/626)).
+- Added the ability to override the target platform OS ([#711](https://github.com/project-stacker/stacker/pull/711)).
+- Added support for using credentials from `containers/auth.json` for authenticated imports ([#712](https://github.com/project-stacker/stacker/pull/712)).
+- Improved readability of error backtraces ([#717](https://github.com/project-stacker/stacker/pull/717)).
+
 ## [v1.0.0](https://github.com/project-stacker/stacker/releases/tag/v1.0.0-rc9)
 
 ### Convert a Dockerfile for stacker
